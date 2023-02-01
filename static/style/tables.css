@@ -1,0 +1,380 @@
+.table {
+	overflow: auto;
+}
+
+.table--journal {
+	padding-bottom: 150px;
+}
+
+.subtable {
+	margin: auto;
+	width: 100%;
+	display: flex;
+}
+
+.subtable .table:nth-child(2) td {
+	border-left: none;
+}
+
+.subtable .table:nth-child(1) {
+	overflow: visible;
+}
+
+table {
+	table-layout: auto;
+	border-collapse: collapse;
+}
+
+td {
+	color: white;
+	font-family: Arial;
+	text-align: center;
+	vertical-align: middle;
+	padding: 5px; 
+	font-size: 14px;
+	font-weight: 400;
+	border: 1px solid white;
+	transition: all .3s;
+	min-width: 10px;
+	max-height: 30px;
+}
+
+.td__rotate {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+}
+
+.td__btn {
+	width: 30px;
+	font-size: 17px;
+	color: #1FAA78;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.td__btn:hover {
+	background-color: #1FAA78;
+	color: #161A1D;
+}
+
+.td__red {
+	color: #B0071F !important;
+}
+
+.td__green {
+	color: #1FAA78 !important;
+}
+
+.td__yellow {
+	color: #E9E902 !important;
+}
+
+.td__blue {
+	color: #5F9CDF !important;
+}
+
+.td__focus {
+	background: #1FAA78;
+}
+
+.td__input {
+	padding: 0;
+}
+
+.td__input input {
+	width: 70px;
+	background-color: #161A1D;
+	border: none;
+	color: white;
+	font-size: 14px;
+	font-family: Arial;
+	outline: none;
+	text-align: center;
+} 
+
+.td__value {
+	position: relative;
+}
+
+.td__result .td__menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	border: 1px solid #1FAA78;
+	z-index: 100;
+	background-color: #161A1D;
+}
+
+.td__total .td__menu {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	border: 1px solid #1FAA78;
+	z-index: 100;
+	background-color: #161A1D;
+}
+
+.td__menu div {
+	display: flex;
+}
+
+.td__menu .menu__down {
+	justify-content: space-between;
+}
+
+.td__menu .menu__btn, 
+.td__menu .menu__input__value {
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	border: 1px solid #1FAA78;
+	justify-content: center;
+	align-items: center;
+	transition: background-color .3s;
+	cursor: pointer;
+}
+
+.td__menu .menu__type, .td__menu .menu__credit  {
+	width: 50px;
+	height: 20px;
+	margin: 5px;
+	border: 1px solid #1FAA78;
+	justify-content: center;
+	align-items: center;
+	transition: background-color .3s;
+	cursor: pointer;
+}
+
+.td__menu .menu__ok {
+	padding: 0 5px;
+	margin: 5px;
+	border: 1px solid #1FAA78;
+	justify-content: center;
+	align-items: center;
+	transition: background-color .3s;
+	cursor: pointer;
+}
+
+.menu__ok:hover, 
+.menu__btn:hover,
+.menu__type:hover  {
+	background-color: #1FAA78;
+}
+
+.td__menu .menu__cancel {
+	padding: 0 5px;
+	margin: 5px;
+	border: 1px solid #B0071F;
+	justify-content: center;
+	align-items: center;
+	transition: background-color .3s;
+	cursor: pointer;
+}
+
+.menu__down .menu__input__separator {
+	border: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu__cancel:hover {
+	background-color: #B0071F;
+}
+
+.visible {
+	display: block !important;
+}
+
+.hidden {
+	display: none !important;
+}
+
+/* Progress */
+
+.progress__title {
+	color: white;
+	font-family: Arial;
+	font-weight: 400;
+	font-size: 30px;
+	padding: 0 0 10px 0;
+}
+
+.progress__semester {
+	color: white;
+	font-family: Arial;
+	font-weight: 400;
+	font-size: 17px;
+	display: flex;
+}
+
+.progress__semester p {
+	cursor: pointer;
+	padding:5px 15px;
+	border: 1px solid white;
+}
+
+.progress__table--teacher,
+.report__table,
+.creditBook__table {
+	margin-top: 42px;
+}
+
+.progress__content .subtable .table {
+	padding-bottom: 75px;
+}
+
+
+/* creditBook__table */
+
+.creditBook__table {
+	display: flex;
+	flex-wrap: wrap;
+} 
+
+.creditBook__table div {
+	overflow: auto;
+	margin-right: 25px;
+	margin-bottom: 15px;
+}
+
+.theme svg {
+	fill: #1FAA78;
+	width: 15px;
+	height: 15px;
+}
+
+.theme {
+	cursor: pointer;
+	position: relative;
+	vertical-align: middle;
+}
+
+.theme .theme__block {
+	background-color: #161A1D;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 5px;
+	border: 1px solid white;
+}
+
+.theme__block textarea {
+	resize: none;
+	width: 200px;
+	height: 75px;
+	background-color: #161A1D;
+	color: white;
+	font-family: Arial;
+	font-size: 14px;
+	padding: 5px;
+	outline: none;
+}
+
+.theme__block textarea:focus {
+	border: 1px solid #1FAA78;
+}
+
+.theme__btn {
+	text-align: right;
+}
+
+.theme__btn span, 
+.btn__remove, 
+.btn__cansel {
+	display: inline-block;
+	padding: 5px;
+	margin: 5px 0;
+	color: white;
+	border: 1px solid #1FAA78;
+	background-color: #161A1D;
+	transition: color, background-color .3s;
+	cursor: pointer;
+}
+
+.btn__remove {
+	border: 1px solid #B0071F;
+}
+
+.btn__remove:hover {
+	color: #161A1D;
+	background-color: #B0071F;
+}
+
+.remove {
+	cursor: pointer;
+	color: #B0071F;
+	font-size: 17px;
+	background-color: #161A1D;
+	transition: color, background-color .3s;
+}
+
+.theme__btn span:hover, .btn__cansel:hover {
+	color: #161A1D;
+	background-color: #1FAA78;
+}
+
+input[type="date"] {
+    position: relative;
+    width: 90px; height: 20px;
+    color: white;
+}
+
+input[type="date"]:before {
+    position: absolute;
+    top: 4px; left: 20px;
+    content: attr(data-date);
+    display: inline-block;
+    color: white;
+}
+
+input[type="date"]::-webkit-datetime-edit, input::-webkit-inner-spin-button, input::-webkit-clear-button {
+    display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    color: white;
+    filter: invert(54%) sepia(79%) saturate(390%) hue-rotate(107deg) brightness(86%) contrast(96%);
+    opacity: 1;
+}
+
+.progress__title {
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+
+.toExcel {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.toExcel__button {
+	display: inline-block;
+	color: #1FAA78;
+	font-family: Arial;
+	font-size: 15px;
+	padding: 5px;
+	border: 1px solid #1FAA78;
+	cursor: pointer;
+	transition: color, background .3s;
+}
+
+.toExcel__button:hover {
+	color: #161A1D;
+	background: #1FAA78;
+}
+
+@media(max-width: 600px){
+	.creditBook__table div {
+		margin-right: 0;
+	}
+
+	.progress__title {
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,422 @@
+/*style*/
+
+#light,
+#light body {
+    background-color: #fff;
+}
+
+#light .header {
+    border-color: #3c3cff;
+}
+
+#light .startPage .header__title {
+    color: white;
+}
+
+#light .header__title {
+    color: black;
+}
+
+#light .startPage .menu__title,
+#light .startPage .menu__item {
+    color: white;
+}
+
+#light .menu__title,
+#light .menu__item {
+    color: black;
+}
+
+#light .menu__item {
+    background-color: white;
+    border-color: #3c3cff;
+}
+
+#light .menu__item:hover {
+    color: #3c3cff;
+}
+
+#light .arrow {
+    fill: #3c3cff;
+}
+
+#light .footer {
+    border-color: #3c3cff;
+}
+
+#light .startPage .copyright {
+    color: white;
+}
+
+#light .copyright {
+    color: black;
+}
+
+#light .error {
+    color: red;
+}
+
+/*startPage*/
+
+#light .login__form {
+    background-color: white;
+    border-color: #3c3cff;
+}
+
+#light .form__title {
+    color: black;
+    border-color: black;
+}
+
+#light .login__form input[type="text"],
+#light .login__form input[type="password"],
+#light .login__form input[type="submit"]{
+    border-color: black;
+    color: black;
+    background-color: white;
+}
+
+#light .login__form input:hover,
+#light  .login__form input:focus {
+    border-color: #3c3cff;
+}
+
+#light .login__form input[type="submit"]:hover,
+#light  .login__form input[type="submit"]:focus {
+    color: #3c3cff;
+}
+
+/*select*/
+
+#light .select select {
+    border-color: black;
+    color: black;
+}
+
+#light option {
+    background-color: white;
+}
+
+#light .select select:hover,
+#light .select select:focus {
+    border-color: #3c3cff;
+}
+
+#light .select .select__btn,
+#light .select__title .select__btn,
+#light .select__td .select__btn {
+    fill: #3c3cff;
+}
+
+#light .select__title select,
+#light .select__td select {
+    color: black;
+}
+
+#light .lds-ring div {
+    border-color: #3c3cff;
+    border-color: #3c3cff transparent transparent transparent;
+}
+
+#light .content__title {
+    color: black;
+}
+
+/*tables*/
+
+#light td {
+    color: black;
+    border-color: #3c3cff;
+}
+
+#light .td__btn {
+    color: #3c3cff;
+}
+
+#light .table--journal .td__btn:hover {
+    background-color: #3c3cff;
+    color: white;
+}
+
+#light .td__red {
+    color: red !important;
+}
+
+#light .td__green {
+    color: green !important;
+}
+
+#light .td__yellow {
+    color: orangered !important;
+}
+
+#light .td__blue {
+    color: blue !important;
+}
+
+#light .td__focus {
+    background: #3c3cff;
+}
+
+#light .td__focus span {
+    color: white;
+}
+
+#light .td__input input {
+    background-color: white;
+    color: black;
+}
+
+#light .td__result .td__menu,
+#light .td__total .td__menu {
+    border-color: #3c3cff;
+    background-color: white;
+}
+
+#light .td__menu .menu__btn,
+#light .td__menu .menu__input__value,
+#light .td__menu .menu__type,
+#light .td__menu .menu__credit,
+#light .td__menu .menu__ok {
+    border-color: #3c3cff;
+}
+
+#light .menu__ok:hover,
+#light .menu__btn:hover,
+#light .menu__type:hover {
+    color: white;
+    background-color: #3c3cff;
+}
+
+#light .td__menu .menu__cancel {
+    border-color: red;
+}
+
+#light .menu__cancel:hover {
+    color: white;
+    background-color: red;
+}
+
+#light .progress__title,
+#light .progress__semester {
+    color: black;
+}
+
+#light .progress__semester p {
+    border-color: black;
+}
+
+#light .theme svg {
+    fill: #3c3cff;
+}
+
+#light .theme .theme__block {
+    background-color: white;
+    border-color: #3c3cff;
+    color: black;
+}
+
+#light .theme__block textarea {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+#light .theme__block textarea:hover,
+#light .theme__block textarea:focus {
+    border-color: #3c3cff;
+}
+
+#light .theme__btn span,
+#light .btn__remove,
+#light .btn__cansel {
+    color: black;
+    border-color: #3c3cff;
+    background-color: white;
+}
+
+#light .btn__remove {
+    border-color: red;
+}
+
+#light .btn__remove:hover{
+    color: white;
+    background-color: red;
+}
+
+#light .remove {
+    color: red;
+    background-color: white;
+}
+
+#light .theme__btn span:hover,
+#light .btn__cansel:hover {
+    color: white;
+    background-color: #3c3cff;
+}
+
+#light input[type="date"],
+#light input[type="date"]:before,
+#light input[type="date"]::-webkit-calendar-picker-indicator {
+    color: black;
+}
+
+#light input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(8%) sepia(100%) saturate(7073%) hue-rotate(248deg) brightness(95%) contrast(144%);
+}
+
+#light .toExcel__button {
+    color: #3c3cff;
+    border-color: #3c3cff;
+}
+
+#light .toExcel__button:hover {
+    color: white;
+    background-color: #3c3cff;
+}
+
+/*adminPanel*/
+
+#light .fileBlock__ok svg,
+#light .btn__upd svg,
+#light .btn__add svg,
+#light .btn__edit svg {
+    fill: #3c3cff;
+}
+
+#light .fileBlock__close svg,
+#light .btn__del svg {
+    fill: red;
+}
+
+#light .admin__panel td {
+    border-top-color: #3c3cff;
+    border-bottom-color: #3c3cff;
+    color: black;
+}
+
+#light .btn__upd,
+#light .btn__add,
+#light .btn__edit {
+    border-color: #3c3cff;
+}
+
+#light .btn__upd:hover svg,
+#light .btn__upd:hover,
+#light .btn__add:hover,
+#light .btn__add:hover svg,
+#light .btn__edit:hover,
+#light .btn__edit:hover svg {
+    fill: white;
+    background-color: #3c3cff;
+}
+
+#light .btn__del {
+    border-color: red;
+}
+
+#light .btn__del:hover svg,
+#light .btn__del:hover {
+    fill: white;
+    background-color: red;
+}
+
+#light .tr__add input,
+#light .tr__edit input {
+    background-color: white;
+    color: black;
+}
+
+#light .fileWrapper {
+    background-color: white;
+}
+
+#light .fileBlock {
+    background-color: white;
+    border-color: #3c3cff;
+}
+
+#light .fileBlock__title,
+#light .fileBlock__filename {
+    color: black;
+}
+
+#light .fileBlock__ok {
+    background-color: white;
+    border: #3c3cff;
+}
+
+#light .fileBlock__close {
+    background-color: white;
+    border-color: red;
+}
+
+#light .fileBlock__ok svg:hover,
+#light .fileBlock__ok:hover {
+    background-color: #3c3cff;
+    fill: white;
+}
+
+#light .fileBlock__close svg:hover,
+#light .fileBlock__close:hover {
+    background-color: red;
+    fill: white;
+}
+
+#light .settings__title,
+#light .settings__subtitle,
+#light .settings__item .settings__name {
+    color: black;
+}
+
+#light .settings__item input {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+#light .settings__item input:focus,
+#light .settings__item input:hover {
+    border-color: #3c3cff;
+}
+
+/* settings */
+
+#light .settings__title,
+#light .settings__name,
+#light{
+    color: black;
+}
+
+#light .settings__item input,
+#light .settings__inner input[type="submit"] {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+#light .settings__inner input[type="submit"]:hover,
+#light .settings__inner input[type="submit"]:focus {
+    color: #3c3cff;
+}
+
+#light .settings__inner input:hover,
+#light .settings__inner input:focus {
+    border-color: #3c3cff;
+}
+
+#light input.apple-switch:checked {
+    box-shadow: inset 20px 0 0 0 #3c3cff;
+    border-color: #3c3cff;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,187 @@
+.select select {
+	position: relative;
+	width: 250px;
+	padding: 8px 30px 8px 10px;
+	background-color: inherit;
+	outline: none;
+	border: 1px solid white;
+	color: white;
+	font-family: Arial;
+	font-size: 17px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align-last: center; 
+	text-align: center;
+	z-index: 3;
+	cursor: pointer;
+}
+
+option {
+	background-color: #161A1D;
+}
+
+.select select:hover,
+.select select:focus {
+	border: 1px solid #1FAA78;
+}
+
+.select {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	position: relative;
+	margin-right: 25px;
+	z-index: 3;
+}
+
+.select .select__btn {
+	display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    fill: #1FAA78;
+    margin-top: 11px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.select__title {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.select__title select {
+	padding: 50px 10px 0 10px;
+	background-color: inherit;
+	outline: none;
+	border: none;
+	color: white;
+	font-family: Arial;
+	font-size: 46px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align-last: center; 
+	text-align: center;
+	cursor: pointer;
+}
+
+.select__title .title {
+	display: inline-block;
+} 
+
+.select__title .select__btn {
+	padding-top: 50px;
+	display: block;
+    width: 40px;
+    height: 40px;
+    fill: #1FAA78;
+    cursor: pointer;
+}
+
+.select__title option {
+	font-size: 17px;
+}
+
+.select__td {
+	position: relative;
+	padding: 0;
+}
+
+.select__td select {
+	border: none;
+	background-color: inherit;
+	outline: none;
+	color: white;
+	font-family: Arial;
+	font-size: 14px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	cursor: pointer;
+	padding-right: 15px;
+	z-index: 3;
+}
+
+.select__td .select__btn {
+	top: 3px;
+	right: 2%;
+	display: block;
+	position: absolute;
+    width: 10px;
+    height: 10px;
+    fill: #1FAA78;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.select__td {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.lds-ring {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+	width: 80px;
+	height: 80px;
+}
+.lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border: 8px solid #1FAA78;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #1FAA78 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media(max-width: 800px) {
+	.select__title select,
+	.content__title {
+		font-size: 30px;
+	}
+
+	.select__title .select__btn {
+		width: 30px;
+		height: 30px;
+	} 
+}
+
+@media(max-width: 510px) {
+	.select__title select,
+	.content__title {
+		font-size: 20px;
+	}
+
+	.select__title .select__btn {
+		width: 20px;
+		height: 20px;
+	} 
+}

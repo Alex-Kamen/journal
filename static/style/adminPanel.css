@@ -1,0 +1,292 @@
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td {
+	border-top: 1px solid #1FAA78;
+	border-bottom: 1px solid #1FAA78;
+	color: white;
+	font-size: 17px;
+	font-family: Arial;
+	padding: 7px 0;
+	text-align: center;
+}
+
+.admin__btn  {
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 15px;
+} 
+
+label {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn__upd svg, .btn__add svg, .btn__edit svg {
+	width: 15px;
+	height: 15px;
+	fill: #1FAA78;
+}
+
+.btn__upd, .btn__add, .btn__edit {
+	background-color: inherit;
+	transition: background-color .3s;
+	border: 1px solid #1FAA78;
+}
+
+.btn__upd:hover svg, 
+.btn__upd:hover, 
+.btn__add:hover, 
+.btn__add:hover svg,
+.btn__edit:hover, 
+.btn__edit:hover svg {
+	fill: #161A1D;
+	background-color: #1FAA78;
+}
+
+.btn__del svg {
+	width: 15px;
+	height: 15px;
+	fill: #B0071F;
+}
+
+.btn__del {
+	background-color: inherit;
+	transition: background-color .3s;
+	border: 1px solid #B0071F;
+}
+
+.btn__del:hover svg, .btn__del:hover {
+	fill: #161A1D;
+	background-color: #B0071F;
+}
+
+.admin__table {
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+.admin__panel {
+	padding: 0 10px;
+}
+
+.td__btn, .td__edit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tr__add input, .tr__edit input {
+	background-color: #161A1D;
+	color: white;
+	border: none;
+	outline: none;
+	font-family: Arial;
+	font-size: 17px;
+	text-align: center;
+	width: 150px;
+}
+
+.tr__add .td__add {
+	display: flex;
+	justify-content: center;
+}
+
+.add__objects td:first-child {
+	text-align: left;
+	padding-left: 10px;
+}
+
+.add__objects td {
+	border-bottom: none;
+}
+
+
+#file {
+	display: none;
+}
+
+.fileWrapper {
+	background-color: black;
+	opacity: .7;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 111;
+}
+
+.fileBlock {
+	top: 40%;
+	left: 40%;
+	position: absolute;
+	opacity: 1;
+	background-color: #161A1D;
+	border: 1px solid #1FAA78;
+	border-radius: 15px;
+	z-index: 112;
+	text-align: center;
+}
+
+.fileBlock__title {
+	color: white;
+	font-weight: 400;
+	font-family: Arial;
+	font-size: 24px;
+	padding: 20px 30px 10px 30px;
+}
+
+.fileBlock__filename {
+	color: white;
+	font-weight: 400;
+	font-family: Arial;
+	font-size: 17px;
+	padding-bottom: 20px;
+}
+
+.fileBlock__btn {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.fileBlock__ok,
+.fileBlock__close {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.fileBlock__ok {
+	background-color: #161A1D;
+	border: 1px solid #1FAA78;
+}
+
+.fileBlock__close {
+	background-color: #161A1D;
+	border: 1px solid #B0071F;
+}
+
+.fileBlock__ok svg:hover, .fileBlock__ok:hover {
+	background-color: #1FAA78;
+	fill: #161A1D;
+}
+
+.fileBlock__close svg:hover, .fileBlock__close:hover {
+	background-color: #B0071F;
+	fill: #161A1D;
+}
+
+.fileBlock__ok svg, 
+.fileBlock__close svg {
+	width: 20px;
+	height: 20px;
+}
+
+.fileBlock__ok svg {
+	fill: #1FAA78;
+}
+
+.fileBlock__close svg {
+	fill: #B0071F;
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+.settings__title {
+	color: white;
+	font-family: Arial;
+	font-size: 48px;
+	font-weight: 400;
+	padding: 50px 0 40px 10px;
+}
+
+.settings__subtitle {
+	color: white;
+	font-family: Arial;
+	font-size: 32px;
+	font-weight: 400;
+	padding: 0 0 15px 10px;
+}
+
+.settings__list {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px 30px 10px;
+}
+
+.settings__item input {
+	display: block;
+	background-color: #161A1D;
+	color: white;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 17px;
+	border: 1px solid white;
+	border-radius: 5px;
+	outline: none;
+	transition: border .3s;
+}
+
+.settings__item .input__field {
+	width: 250px;
+	margin: 15px 0;
+}
+
+.settings__item .select {
+	margin:  15px 0;
+	display: block;
+} 
+
+.settings__item .select select {
+	padding: 10px 0;
+	width: 270px;
+	border-radius: 5px;
+	transition: border .3s;
+}
+
+.settings__item .settings__name {
+	color: white;
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: 400;
+	padding: 10px 0 15px 0;
+}
+
+.settings__item input[type="submit"] {
+	margin-top: 30px;
+	width: 150px; 
+	cursor: pointer;
+	margin-bottom: 10px; 
+}
+
+.settings__item input:focus, 
+.settings__item input:hover {
+	border: 1px solid #1FAA78;
+}
+
+
+
+
+
